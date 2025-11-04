@@ -1,0 +1,9 @@
+{
+  "control_method": "arduino",
+  "confidence": 0.45,
+  "movement_amp": 2.5,
+  "headshot_mode": true,
+  "game_fov": 103,
+  "max_targets": 5,
+  "target_selection_strategy": "closest"
+}

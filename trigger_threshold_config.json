@@ -1,0 +1,142 @@
+{
+  "current_preset": "v",
+  "presets": {
+    "ultra_precision": {
+      "name": "超高精度模式",
+      "description": "适用于需要极高精度的竞技游戏",
+      "alignment_threshold": 20,
+      "precise_alignment_threshold": 20.0,
+      "xy_check_threshold": 20.0,
+      "angle_threshold": 0.2,
+      "precise_angle_threshold": 0.15,
+      "use_angle_threshold": true,
+      "cooldown_duration": 0.3,
+      "shots_per_trigger": 1,
+      "shot_interval": 0.2,
+      "games": [
+        "VALORANT",
+        "CS2",
+        "Rainbow Six Siege"
+      ]
+    },
+    "high_precision": {
+      "name": "高精度模式",
+      "description": "平衡精度和反应速度",
+      "alignment_threshold": 20,
+      "precise_alignment_threshold": 20.0,
+      "xy_check_threshold": 25.0,
+      "angle_threshold": 0.3,
+      "precise_angle_threshold": 0.2,
+      "use_angle_threshold": true,
+      "cooldown_duration": 0.1,
+      "shots_per_trigger": 2,
+      "shot_interval": 0.25,
+      "games": [
+        "Apex Legends",
+        "Overwatch 2"
+      ]
+    },
+    "balanced": {
+      "name": "平衡模式",
+      "description": "当前默认设置，适合大多数游戏",
+      "alignment_threshold": 20,
+      "precise_alignment_threshold": 20.0,
+      "xy_check_threshold": 20.0,
+      "angle_threshold": 0.5,
+      "precise_angle_threshold": 0.3,
+      "use_angle_threshold": true,
+      "cooldown_duration": 0.5,
+      "shots_per_trigger": 2,
+      "shot_interval": 0.3,
+      "games": [
+        "Fortnite",
+        "PUBG",
+        "Call of Duty"
+      ]
+    },
+    "relaxed": {
+      "name": "宽松模式",
+      "description": "更快的反应速度，适合快节奏游戏",
+      "alignment_threshold": 20,
+      "precise_alignment_threshold": 20.0,
+      "xy_check_threshold": 20.0,
+      "angle_threshold": 0.8,
+      "precise_angle_threshold": 0.5,
+      "use_angle_threshold": true,
+      "cooldown_duration": 0.6,
+      "shots_per_trigger": 2,
+      "shot_interval": 0.35,
+      "games": [
+        "Battlefield",
+        "Titanfall 2"
+      ]
+    },
+    "ultra_relaxed": {
+      "name": "超宽松模式",
+      "description": "最快反应，适合休闲游戏或练习",
+      "alignment_threshold": 20,
+      "precise_alignment_threshold": 20.0,
+      "xy_check_threshold": 20.0,
+      "angle_threshold": 1.2,
+      "precise_angle_threshold": 0.8,
+      "use_angle_threshold": true,
+      "cooldown_duration": 0.8,
+      "shots_per_trigger": 3,
+      "shot_interval": 0.4,
+      "games": [
+        "休闲射击游戏",
+        "练习模式"
+      ]
+    },
+    "instant_fire": {
+      "name": "瞬发模式",
+      "description": "几乎零冷却时间，极致开火速度，适合需要最快反应的场景",
+      "alignment_threshold": 25,
+      "precise_alignment_threshold": 18,
+      "xy_check_threshold": 20.0,
+      "angle_threshold": 12.0,
+      "precise_angle_threshold": 18,
+      "use_angle_threshold": false,
+      "cooldown_duration": 0.005,
+      "shots_per_trigger": 2,
+      "shot_interval": 0.01,
+      "games": [
+        "极速反应游戏",
+        "竞技模式"
+      ]
+    },
+    "rapid_fire": {
+      "name": "快速开火模式",
+      "description": "最快的开火速度，适合需要快速反应的场景",
+      "alignment_threshold": 20,
+      "precise_alignment_threshold": 20.0,
+      "xy_check_threshold": 25.0,
+      "angle_threshold": 0.3,
+      "precise_angle_threshold": 0.2,
+      "use_angle_threshold": true,
+      "cooldown_duration": 0.001,
+      "shots_per_trigger": 1,
+      "shot_interval": 0.01,
+      "games": [
+        "快速反应游戏"
+      ]
+    },
+    "v": {
+      "name": "v",
+      "description": "禁用角度偏移的配置",
+      "cooldown_duration": 0.2 ,
+      "shots_per_trigger": 2,
+      "shot_interval": 0.1,
+      "use_angle_threshold": false,
+      "alignment_threshold": 30.0,
+      "precise_alignment_threshold":15,
+      "xy_check_threshold": 15,
+      "angle_threshold": 10.0,
+      "precise_angle_threshold": 10.0,
+      "games": [
+        "自定义"
+      ]
+    }
+  },
+  "version": "1.0"
+}

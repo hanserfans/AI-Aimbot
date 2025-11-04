@@ -145,7 +145,8 @@ def main():
             mouseMove = [xMid - cWidth, (yMid - headshot_offset) - cHeight]
             # Moving the mouse 
             #imagine recalculating everything to find out you have a drop in replacement
-            if win32api.GetKeyState(0x02) < 0:
+            # Check for Ctrl+F combination (Ctrl=0x11, F=0x46)
+            if (win32api.GetKeyState(0x11) < 0) and (win32api.GetKeyState(0x46) < 0):
                 ghub_move(mouseMove[0],mouseMove[1])
             last_mid_coord = [xMid, yMid]
 
@@ -200,4 +201,4 @@ if __name__ == "__main__":
         import traceback
         traceback.print_exception(e)
         print("ERROR: " + str(e))
-        print("Ask @Wonder for help in our Discord in the #ai-aimbot channel ONLY: https://discord.gg/rootkitorg")  
+        print("Ask @Wonder for help in our Discord in the #ai-aimbot channel ONLY: https://discord.gg/rootkitorg")

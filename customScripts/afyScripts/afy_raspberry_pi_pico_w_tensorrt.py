@@ -1,4 +1,4 @@
-from unittest import result
+# Arduino/Raspberry Pi Pico W 外部硬件控制脚本
 import torch
 import numpy as np
 import cv2

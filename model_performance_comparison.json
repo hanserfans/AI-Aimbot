@@ -1,0 +1,80 @@
+{
+  "yolov5s": {
+    "model_name": "yolov5s",
+    "model_path": "yolov5s320Half.onnx",
+    "num_runs": 100,
+    "total_time_sec": 1.4331390857696533,
+    "avg_inference_ms": 14.312877000265871,
+    "min_inference_ms": 10.93340000079479,
+    "max_inference_ms": 19.669799999974202,
+    "std_inference_ms": 1.588141426256334,
+    "fps": 69.86715528830607,
+    "system_before": {
+      "cpu_percent": 10.1,
+      "memory_percent": 95.1,
+      "memory_used_mb": 14806.15234375,
+      "gpu": {
+        "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "memory_total": 8188.0,
+        "memory_used": 2831.0,
+        "memory_free": 5127.0,
+        "load": 36.0,
+        "temperature": 52.0
+      }
+    },
+    "system_after": {
+      "cpu_percent": 11.1,
+      "memory_percent": 94.3,
+      "memory_used_mb": 14689.90625,
+      "gpu": {
+        "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "memory_total": 8188.0,
+        "memory_used": 2802.0,
+        "memory_free": 5156.0,
+        "load": 37.0,
+        "temperature": 52.0
+      }
+    },
+    "memory_increase_mb": -116.24609375,
+    "gpu_memory_increase_mb": -29.0
+  },
+  "yolov5m": {
+    "model_name": "yolov5m",
+    "model_path": "yolov5m320Half.onnx",
+    "num_runs": 100,
+    "total_time_sec": 3.097142219543457,
+    "avg_inference_ms": 30.953778000475722,
+    "min_inference_ms": 26.25790000456618,
+    "max_inference_ms": 36.36640000331681,
+    "std_inference_ms": 1.9969914866066247,
+    "fps": 32.30623415289181,
+    "system_before": {
+      "cpu_percent": 23.7,
+      "memory_percent": 94.7,
+      "memory_used_mb": 14746.62890625,
+      "gpu": {
+        "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "memory_total": 8188.0,
+        "memory_used": 2915.0,
+        "memory_free": 5043.0,
+        "load": 34.0,
+        "temperature": 52.0
+      }
+    },
+    "system_after": {
+      "cpu_percent": 21.5,
+      "memory_percent": 94.8,
+      "memory_used_mb": 14771.2421875,
+      "gpu": {
+        "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "memory_total": 8188.0,
+        "memory_used": 2881.0,
+        "memory_free": 5077.0,
+        "load": 37.0,
+        "temperature": 53.0
+      }
+    },
+    "memory_increase_mb": 24.61328125,
+    "gpu_memory_increase_mb": -34.0
+  }
+}

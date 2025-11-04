@@ -1,0 +1,450 @@
+{
+  "scenario_results": [
+    {
+      "config": [
+        [
+          320,
+          320
+        ],
+        1,
+        "小图像单张处理"
+      ],
+      "traditional_gpu": {
+        "processing_time": 0.1967308521270752,
+        "processed_count": 1,
+        "avg_time_per_image": 0.1967308521270752,
+        "metrics": {
+          "cpu_percent": 10.9,
+          "memory_percent": 96.1,
+          "memory_used_gb": 14.61551284790039,
+          "gpu_memory_used_gb": 0.017881393432617188,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.2236402671755725
+        },
+        "success": true
+      },
+      "unified_mixed": {
+        "processing_time": 0.6197643280029297,
+        "processed_count": 1,
+        "avg_time_per_image": 0.6197643280029297,
+        "metrics": {
+          "cpu_percent": 19.4,
+          "memory_percent": 96.2,
+          "memory_used_gb": 14.626632690429688,
+          "gpu_memory_used_gb": 0.03520345687866211,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.4402850667938931
+        },
+        "unified_stats": {
+          "unified_memory_supported": true,
+          "unified_allocation_ratio": 1.0,
+          "total_migrations": 0,
+          "average_migration_time_ms": 0.0,
+          "prefetch_hit_rate": 1.0,
+          "memory_saved_mb": 0.0,
+          "access_violations": 0,
+          "preprocessing_avg_time_ms": 619.755744934082,
+          "postprocessing_avg_time_ms": 0,
+          "unified_memory_hit_rate": 0.0,
+          "auto_migration_count": 0,
+          "manual_migration_count": 0,
+          "memory_efficiency_score": 0.0,
+          "total_processing_time_s": 0.619755744934082
+        },
+        "success": true
+      },
+      "unified_gpu_heavy": {
+        "processing_time": 0.013538360595703125,
+        "processed_count": 1,
+        "avg_time_per_image": 0.013538360595703125,
+        "metrics": {
+          "cpu_percent": 9.9,
+          "memory_percent": 95.4,
+          "memory_used_gb": 14.510986328125,
+          "gpu_memory_used_gb": 0.03520345687866211,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.4402850667938931
+        },
+        "unified_stats": {
+          "unified_memory_supported": true,
+          "unified_allocation_ratio": 1.0,
+          "total_migrations": 0,
+          "average_migration_time_ms": 0.0,
+          "prefetch_hit_rate": 1.0,
+          "memory_saved_mb": 0.0,
+          "access_violations": 0,
+          "preprocessing_avg_time_ms": 316.64204597473145,
+          "postprocessing_avg_time_ms": 0,
+          "unified_memory_hit_rate": 0.0,
+          "auto_migration_count": 0,
+          "manual_migration_count": 0,
+          "memory_efficiency_score": 0.0,
+          "total_processing_time_s": 0.6332840919494629
+        },
+        "success": true
+      }
+    },
+    {
+      "config": [
+        [
+          640,
+          640
+        ],
+        1,
+        "中等图像单张处理"
+      ],
+      "traditional_gpu": {
+        "processing_time": 0.0028955936431884766,
+        "processed_count": 1,
+        "avg_time_per_image": 0.0028955936431884766,
+        "metrics": {
+          "cpu_percent": 15.4,
+          "memory_percent": 95.4,
+          "memory_used_gb": 14.516155242919922,
+          "gpu_memory_used_gb": 0.03692007064819336,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.4617545324427481
+        },
+        "success": true
+      },
+      "unified_mixed": {
+        "processing_time": 0.002463817596435547,
+        "processed_count": 1,
+        "avg_time_per_image": 0.002463817596435547,
+        "metrics": {
+          "cpu_percent": 6.2,
+          "memory_percent": 95.5,
+          "memory_used_gb": 14.519359588623047,
+          "gpu_memory_used_gb": 0.03692007064819336,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.4617545324427481
+        },
+        "unified_stats": {
+          "unified_memory_supported": true,
+          "unified_allocation_ratio": 1.0,
+          "total_migrations": 0,
+          "average_migration_time_ms": 0.0,
+          "prefetch_hit_rate": 1.0,
+          "memory_saved_mb": 0.0,
+          "access_violations": 0,
+          "preprocessing_avg_time_ms": 211.9141419728597,
+          "postprocessing_avg_time_ms": 0,
+          "unified_memory_hit_rate": 0.0,
+          "auto_migration_count": 0,
+          "manual_migration_count": 0,
+          "memory_efficiency_score": 0.0,
+          "total_processing_time_s": 0.6357424259185791
+        },
+        "success": true
+      },
+      "unified_gpu_heavy": {
+        "processing_time": 0.0026884078979492188,
+        "processed_count": 1,
+        "avg_time_per_image": 0.0026884078979492188,
+        "metrics": {
+          "cpu_percent": 2.6,
+          "memory_percent": 95.4,
+          "memory_used_gb": 14.516559600830078,
+          "gpu_memory_used_gb": 0.03692007064819336,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.4617545324427481
+        },
+        "unified_stats": {
+          "unified_memory_supported": true,
+          "unified_allocation_ratio": 1.0,
+          "total_migrations": 0,
+          "average_migration_time_ms": 0.0,
+          "prefetch_hit_rate": 1.0,
+          "memory_saved_mb": 0.0,
+          "access_violations": 0,
+          "preprocessing_avg_time_ms": 159.60651636123657,
+          "postprocessing_avg_time_ms": 0,
+          "unified_memory_hit_rate": 0.0,
+          "auto_migration_count": 0,
+          "manual_migration_count": 0,
+          "memory_efficiency_score": 0.0,
+          "total_processing_time_s": 0.6384260654449463
+        },
+        "success": true
+      }
+    },
+    {
+      "config": [
+        [
+          1920,
+          1080
+        ],
+        1,
+        "大图像单张处理"
+      ],
+      "traditional_gpu": {
+        "processing_time": 0.037734270095825195,
+        "processed_count": 1,
+        "avg_time_per_image": 0.037734270095825195,
+        "metrics": {
+          "cpu_percent": 3.1,
+          "memory_percent": 95.5,
+          "memory_used_gb": 14.5203857421875,
+          "gpu_memory_used_gb": 0.0462183952331543,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.5780474713740458
+        },
+        "success": true
+      },
+      "unified_mixed": {
+        "processing_time": 0.024537086486816406,
+        "processed_count": 1,
+        "avg_time_per_image": 0.024537086486816406,
+        "metrics": {
+          "cpu_percent": 3.6,
+          "memory_percent": 95.5,
+          "memory_used_gb": 14.517936706542969,
+          "gpu_memory_used_gb": 0.04635000228881836,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.5796934637404579
+        },
+        "unified_stats": {
+          "unified_memory_supported": true,
+          "unified_allocation_ratio": 1.0,
+          "total_migrations": 0,
+          "average_migration_time_ms": 0.0,
+          "prefetch_hit_rate": 1.0,
+          "memory_saved_mb": 0.0,
+          "access_violations": 0,
+          "preprocessing_avg_time_ms": 132.5915813446045,
+          "postprocessing_avg_time_ms": 0,
+          "unified_memory_hit_rate": 0.0,
+          "auto_migration_count": 0,
+          "manual_migration_count": 0,
+          "memory_efficiency_score": 0.0,
+          "total_processing_time_s": 0.6629579067230225
+        },
+        "success": true
+      },
+      "unified_gpu_heavy": {
+        "processing_time": 0.011220693588256836,
+        "processed_count": 1,
+        "avg_time_per_image": 0.011220693588256836,
+        "metrics": {
+          "cpu_percent": 7.9,
+          "memory_percent": 95.5,
+          "memory_used_gb": 14.521770477294922,
+          "gpu_memory_used_gb": 0.04635000228881836,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.5796934637404579
+        },
+        "unified_stats": {
+          "unified_memory_supported": true,
+          "unified_allocation_ratio": 1.0,
+          "total_migrations": 0,
+          "average_migration_time_ms": 0.0,
+          "prefetch_hit_rate": 1.0,
+          "memory_saved_mb": 0.0,
+          "access_violations": 0,
+          "preprocessing_avg_time_ms": 112.36218611399333,
+          "postprocessing_avg_time_ms": 0,
+          "unified_memory_hit_rate": 0.0,
+          "auto_migration_count": 0,
+          "manual_migration_count": 0,
+          "memory_efficiency_score": 0.0,
+          "total_processing_time_s": 0.67417311668396
+        },
+        "success": true
+      }
+    },
+    {
+      "config": [
+        [
+          320,
+          320
+        ],
+        4,
+        "小图像批处理"
+      ],
+      "traditional_gpu": {
+        "processing_time": 0.0036423206329345703,
+        "processed_count": 4,
+        "avg_time_per_image": 0.0009105801582336426,
+        "metrics": {
+          "cpu_percent": 5.7,
+          "memory_percent": 95.4,
+          "memory_used_gb": 14.513229370117188,
+          "gpu_memory_used_gb": 0.03692007064819336,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.4617545324427481
+        },
+        "success": true
+      },
+      "unified_mixed": {
+        "processing_time": 0.003670215606689453,
+        "processed_count": 4,
+        "avg_time_per_image": 0.0009175539016723633,
+        "metrics": {
+          "cpu_percent": 8.6,
+          "memory_percent": 95.5,
+          "memory_used_gb": 14.523616790771484,
+          "gpu_memory_used_gb": 0.03692007064819336,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.4617545324427481
+        },
+        "unified_stats": {
+          "unified_memory_supported": true,
+          "unified_allocation_ratio": 1.0,
+          "total_migrations": 0,
+          "average_migration_time_ms": 0.0,
+          "prefetch_hit_rate": 1.0,
+          "memory_saved_mb": 0.0,
+          "access_violations": 0,
+          "preprocessing_avg_time_ms": 67.78333187103271,
+          "postprocessing_avg_time_ms": 0,
+          "unified_memory_hit_rate": 0.0,
+          "auto_migration_count": 0,
+          "manual_migration_count": 0,
+          "memory_efficiency_score": 0.0,
+          "total_processing_time_s": 0.6778333187103271
+        },
+        "success": true
+      },
+      "unified_gpu_heavy": {
+        "processing_time": 0.0050585269927978516,
+        "processed_count": 4,
+        "avg_time_per_image": 0.0012646317481994629,
+        "metrics": {
+          "cpu_percent": 9.5,
+          "memory_percent": 94.7,
+          "memory_used_gb": 14.402938842773438,
+          "gpu_memory_used_gb": 0.03692007064819336,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.4617545324427481
+        },
+        "unified_stats": {
+          "unified_memory_supported": true,
+          "unified_allocation_ratio": 1.0,
+          "total_migrations": 0,
+          "average_migration_time_ms": 0.0,
+          "prefetch_hit_rate": 1.0,
+          "memory_saved_mb": 0.0,
+          "access_violations": 0,
+          "preprocessing_avg_time_ms": 48.77681391579764,
+          "postprocessing_avg_time_ms": 0,
+          "unified_memory_hit_rate": 0.0,
+          "auto_migration_count": 0,
+          "manual_migration_count": 0,
+          "memory_efficiency_score": 0.0,
+          "total_processing_time_s": 0.682875394821167
+        },
+        "success": true
+      }
+    },
+    {
+      "config": [
+        [
+          640,
+          640
+        ],
+        2,
+        "中等图像批处理"
+      ],
+      "traditional_gpu": {
+        "processing_time": 0.00623321533203125,
+        "processed_count": 2,
+        "avg_time_per_image": 0.003116607666015625,
+        "metrics": {
+          "cpu_percent": 9.8,
+          "memory_percent": 94.2,
+          "memory_used_gb": 14.32912826538086,
+          "gpu_memory_used_gb": 0.03920888900756836,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.4903804866412214
+        },
+        "success": true
+      },
+      "unified_mixed": {
+        "processing_time": 0.004930019378662109,
+        "processed_count": 2,
+        "avg_time_per_image": 0.0024650096893310547,
+        "metrics": {
+          "cpu_percent": 8.4,
+          "memory_percent": 92.2,
+          "memory_used_gb": 14.029563903808594,
+          "gpu_memory_used_gb": 0.03920888900756836,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.4903804866412214
+        },
+        "unified_stats": {
+          "unified_memory_supported": true,
+          "unified_allocation_ratio": 1.0,
+          "total_migrations": 0,
+          "average_migration_time_ms": 0.0,
+          "prefetch_hit_rate": 1.0,
+          "memory_saved_mb": 0.0,
+          "access_violations": 0,
+          "preprocessing_avg_time_ms": 42.987436056137085,
+          "postprocessing_avg_time_ms": 0,
+          "unified_memory_hit_rate": 0.0,
+          "auto_migration_count": 0,
+          "manual_migration_count": 0,
+          "memory_efficiency_score": 0.0,
+          "total_processing_time_s": 0.6877989768981934
+        },
+        "success": true
+      },
+      "unified_gpu_heavy": {
+        "processing_time": 0.0044002532958984375,
+        "processed_count": 2,
+        "avg_time_per_image": 0.0022001266479492188,
+        "metrics": {
+          "cpu_percent": 4.1,
+          "memory_percent": 92.1,
+          "memory_used_gb": 14.011253356933594,
+          "gpu_memory_used_gb": 0.03920888900756836,
+          "gpu_memory_total_gb": 7.99560546875,
+          "gpu_memory_percent": 0.4903804866412214
+        },
+        "unified_stats": {
+          "unified_memory_supported": true,
+          "unified_allocation_ratio": 1.0,
+          "total_migrations": 0,
+          "average_migration_time_ms": 0.0,
+          "prefetch_hit_rate": 1.0,
+          "memory_saved_mb": 0.0,
+          "access_violations": 0,
+          "preprocessing_avg_time_ms": 38.453261057535805,
+          "postprocessing_avg_time_ms": 0,
+          "unified_memory_hit_rate": 0.0,
+          "auto_migration_count": 0,
+          "manual_migration_count": 0,
+          "memory_efficiency_score": 0.0,
+          "total_processing_time_s": 0.6921586990356445
+        },
+        "success": true
+      }
+    }
+  ],
+  "summary": {
+    "test_scenarios": 5,
+    "total_test_time_minutes": 0.2329539179801941,
+    "avg_processing_time_ms": {
+      "traditional_gpu": 48.27758073806763,
+      "unified_mixed": 130.029559135437,
+      "unified_gpu_heavy": 6.182444095611572
+    },
+    "avg_memory_usage_percent": {
+      "traditional_gpu": 95.32,
+      "unified_mixed": 94.97999999999999,
+      "unified_gpu_heavy": 94.62
+    },
+    "performance_improvement_percent": {
+      "unified_mixed_speed": -169.33735524345917,
+      "unified_gpu_speed": 87.19396456679401,
+      "unified_mixed_memory": 0.35669324381032674,
+      "unified_gpu_memory": 0.7343684431388887
+    },
+    "success_rates": {
+      "traditional_gpu": 100.0,
+      "unified_mixed": 100.0,
+      "unified_gpu_heavy": 100.0
+    }
+  },
+  "timestamp": "20251101_193159"
+}

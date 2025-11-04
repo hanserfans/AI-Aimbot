@@ -1,0 +1,49 @@
+{
+  "statistics": {
+    "distance_stats": {
+      "mean": 5.095176170615699,
+      "median": 2.8855309420258264,
+      "std": 8.019392776577472,
+      "min": 0.614197941401636,
+      "max": 38.27078969958314,
+      "percentile_25": 1.714173899696065,
+      "percentile_75": 4.19483747236435,
+      "percentile_90": 6.187178107489222,
+      "percentile_95": 26.370275781123183
+    },
+    "velocity_stats": {
+      "mean": 487.68222359056426,
+      "median": 280.72730531277097,
+      "std": 770.7470367007006,
+      "min": 59.24051148444666,
+      "max": 3628.047335686655
+    }
+  },
+  "suggestions": {
+    "conservative": {
+      "threshold": 1.714173899696065,
+      "description": "保守阈值 - 过滤25%的最小移动"
+    },
+    "balanced": {
+      "threshold": 2.8855309420258264,
+      "description": "平衡阈值 - 过滤50%的移动"
+    },
+    "aggressive": {
+      "threshold": 4.19483747236435,
+      "description": "激进阈值 - 只保留25%的最大移动"
+    },
+    "ultra_conservative": {
+      "threshold": 0.1,
+      "description": "超保守阈值 - 基于均值减一个标准差"
+    },
+    "ultra_aggressive": {
+      "threshold": 13.11456894719317,
+      "description": "超激进阈值 - 基于均值加一个标准差"
+    }
+  },
+  "current_system_thresholds": {
+    "main_program": 10.0,
+    "dynamic_tracking": 1.0,
+    "head_smoother": 1.0
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "optimization_timestamp": "2025-11-01 19:57:23",
+  "system_analysis": {
+    "gpu_memory_gb": 7.99609375,
+    "gpu_memory_free": 4.689453125,
+    "gpu_utilization": 35.0,
+    "memory_usage_percent": 93.8,
+    "memory_available_gb": 0.9498558044433594,
+    "cpu_percent": 18.6,
+    "cpu_count": 32
+  },
+  "fps_optimization": {
+    "previous_fps": 100,
+    "optimal_fps": 351,
+    "improvement_percentage": 250.99999999999997,
+    "updated_files": [
+      "gameSelection.py",
+      "customScripts/AimAssist/main_onnx_amd_perf.py",
+      "customScripts/yolov8_live_overlay/yolov8_live_overlay.py"
+    ],
+    "frame_limiter_optimizations": [
+      "main_onnx.py: 建议检查time.sleep调用",
+      "main_yolov8.py: 发现60FPS限制器",
+      "yolov8_headshot_aimbot.py: 建议检查time.sleep调用",
+      "smart_aimbot.py: 建议检查time.sleep调用"
+    ]
+  },
+  "performance_predictions": {
+    "expected_fps_range": "301-351",
+    "processing_latency_reduction": "60-80%",
+    "gpu_utilization_increase": "85-95%",
+    "system_responsiveness": "显著提升"
+  },
+  "recommendations": [
+    "重启AI瞄准程序以应用新的351 FPS设置",
+    "监控GPU温度，确保散热充足",
+    "观察系统稳定性，如有问题可适当降低FPS",
+    "使用GPU监控器验证实际性能提升",
+    "考虑进一步优化显示器刷新率匹配"
+  ]
+}

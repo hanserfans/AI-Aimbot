@@ -1,0 +1,24 @@
+{
+    "use_unified_memory": true,
+    "unified_memory_size_gb": 2.0,
+    "unified_memory_access_pattern": "gpu_heavy",
+    "enable_auto_migration": true,
+    "memory_optimization_level": "balanced",
+    "debug_unified_memory": false,
+    "fallback_to_traditional_gpu": true,
+    "performance_monitoring": true,
+    "memory_pool_preallocation": true,
+    "zero_copy_optimization": true,
+    "description": {
+        "use_unified_memory": "是否启用CUDA统一内存支持（默认: true）",
+        "unified_memory_size_gb": "统一内存池大小，单位GB（默认: 2.0）",
+        "unified_memory_access_pattern": "内存访问模式：cpu_heavy（CPU重度）、gpu_heavy（GPU重度）、balanced（平衡）",
+        "enable_auto_migration": "是否启用自动内存迁移（默认: true）",
+        "memory_optimization_level": "内存优化级别：aggressive（激进）、balanced（平衡）、conservative（保守）",
+        "debug_unified_memory": "是否启用统一内存调试信息（默认: false）",
+        "fallback_to_traditional_gpu": "统一内存失败时是否回退到传统GPU（默认: true）",
+        "performance_monitoring": "是否启用性能监控（默认: true）",
+        "memory_pool_preallocation": "是否预分配内存池（默认: true）",
+        "zero_copy_optimization": "是否启用零拷贝优化（默认: true）"
+    }
+}

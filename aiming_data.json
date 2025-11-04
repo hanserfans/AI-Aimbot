@@ -1,0 +1,11 @@
+{
+  "offset_history": [],
+  "stats": {
+    "total_shots": 0,
+    "accurate_shots": 0,
+    "average_offset": 0.0,
+    "best_offset": Infinity,
+    "worst_offset": 0.0
+  },
+  "dynamic_headshot_ratio": 0.38
+}

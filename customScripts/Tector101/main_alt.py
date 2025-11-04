@@ -213,7 +213,8 @@ def main():
           
 
             # Moving the mouse
-            if win32api.GetKeyState(0x14):
+            # Check for Ctrl+F combination (Ctrl=0x11, F=0x46)
+                if (win32api.GetKeyState(0x11) < 0) and (win32api.GetKeyState(0x46) < 0):
                 win32api.mouse_event(win32con.MOUSEEVENTF_MOVE, int(
                     mouseMove[0] * aaMovementAmp), int(mouseMove[1] * aaMovementAmp), 0, 0)
             last_mid_coord = [xMid, yMid]

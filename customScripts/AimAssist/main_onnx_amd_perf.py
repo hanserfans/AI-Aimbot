@@ -45,7 +45,7 @@ def main():
     # Max FPS - The maximum number of frames per second that the aimbot can run at
     # Ideally this should be the same as the FPS of the game, double that if you have a high-spec system
     # If the aimbot makes your game lag, lower this value
-    Max_FPS = 150
+    351
 
     # Autoaim mouse movement amplifier
     aaMovementAmp = .4
@@ -253,7 +253,8 @@ def main():
             mouseMove = [xMid - cWidth, (yMid - headshot_offset) - cHeight]
 
             # Moving the mouse
-            if win32api.GetKeyState(0x14):
+            # Check for Ctrl+F combination (Ctrl=0x11, F=0x46)
+            if (win32api.GetKeyState(0x11) < 0) and (win32api.GetKeyState(0x46) < 0):
                 win32api.mouse_event(win32con.MOUSEEVENTF_MOVE, int(
                     mouseMove[0] * aaMovementAmp), int(mouseMove[1] * aaMovementAmp), 0, 0)
             last_mid_coord = [xMid, yMid]

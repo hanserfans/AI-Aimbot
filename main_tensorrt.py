@@ -17,7 +17,13 @@ import gameSelection
 
 def main():
     # External Function for running the game selection menu (gameSelection.py)
-    camera, cWidth, cHeight = gameSelection.gameSelection()
+    result = gameSelection.gameSelection()
+    if result is None:
+        print("[ERROR] 游戏选择失败，程序退出")
+        return
+    
+    camera, cWidth, cHeight, camera_type = result
+    print("[INFO] 使用屏幕捕获方案: {}".format(camera_type))
 
     # Used for forcing garbage collection
     count = 0
@@ -36,7 +42,17 @@ def main():
     with torch.no_grad():
         while win32api.GetAsyncKeyState(ord(aaQuitKey)) == 0:
 
-            npImg = cp.array([camera.get_latest_frame()])
+            # Getting Frame (different API for different camera types)
+            if camera_type == "bettercam":
+                npImg = cp.array([camera.get_latest_frame()])
+            elif camera_type == "dxcam":
+                frame = camera.get_latest_frame()
+                if frame is None:
+                    continue
+                npImg = cp.array([frame])
+            else:
+                print("[ERROR] 未知的相机类型: {}".format(camera_type))
+                break
             if npImg.shape[3] == 4:
                 # If the image has an alpha channel, remove it
                 npImg = npImg[:, :, :, :3]
@@ -112,7 +128,8 @@ def main():
                 mouseMove = [xMid - cWidth, (yMid - headshot_offset) - cHeight]
 
                 # Moving the mouse
-                if win32api.GetKeyState(0x14):
+                # Check for Caps Lock key (Caps Lock=0x14)
+                if win32api.GetKeyState(0x14) < 0:
                     win32api.mouse_event(win32con.MOUSEEVENTF_MOVE, int(
                         mouseMove[0] * aaMovementAmp), int(mouseMove[1] * aaMovementAmp), 0, 0)
                 last_mid_coord = [xMid, yMid]

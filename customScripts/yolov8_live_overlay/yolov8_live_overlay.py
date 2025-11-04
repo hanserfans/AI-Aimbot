@@ -22,7 +22,7 @@ def p_engine(q_target, q_view, model_name, dims):
     box_left, box_top, box_size, crosshair_x, crosshair_y = dims
     region = (box_left, box_top, box_left + box_size, box_top + box_size)
     camera = dxcam.create(region=region, output_color="RGB")
-    camera.start(target_fps=120, video_mode=True) #video_mode=false will wait for unique frames before returning
+    camera.start(351, video_mode=True) #video_mode=false will wait for unique frames before returning
     model = YOLO(model_name)
     while 1:
         frame = camera.get_latest_frame()

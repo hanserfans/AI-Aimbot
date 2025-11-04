@@ -1,0 +1,30 @@
+
+# 针对 1600 DPI × 0.19 灵敏度的优化配置
+
+## 1. 鼠标驱动配置
+MOVEMENT_CORRECTION_FACTOR = 1.022  # 优化后的校正因子
+
+## 2. 移动系统配置
+# 由于您的eDPI较低(304.0)，建议使用以下设置：
+
+# 最小步长（接近硬件上限以减少步数）
+min_step_size = 120
+
+# 步数计算优化（针对低eDPI）
+def calculate_steps_for_low_edpi(distance):
+    if distance <= 127:
+        return 1
+    elif distance <= 254:
+        return 2
+    else:
+        return max(2, math.ceil(distance / 120))
+
+## 3. 瞄准系统配置
+# 低eDPI用户通常需要更精确的瞄准
+headshot_precision_mode = True
+micro_adjustment_threshold = 10.0  # 降低微调阈值
+
+## 4. 性能优化
+# 低eDPI需要更多移动步数，建议启用非阻塞移动
+use_non_blocking_movement = True
+movement_smoothing = True
